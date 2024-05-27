@@ -1,0 +1,350 @@
+/* General Page Setup */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#main {
+  margin-left: 0; /* Reset margin-left */
+  padding: 16px;
+  transition: margin-left 0.5s; /* Ensure smooth transition */
+}
+
+/* Sidebar Menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 60px; /* Adjusted to create space between header and sidebar */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(10px);
+}
+
+.sidebar .sidebar-content {
+  padding-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainBackgroundColour);
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+#header {
+  color: var(--headerTextColour);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+
+#header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#header li {
+  margin-right: 20px;
+}
+
+#header li a {
+  text-decoration: none;
+  color: var(--headerTextColour);
+  transition: 0.3s;
+}
+
+.lightBtn {
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Page Content */
+#content {
+  margin-top: 80px; /* Ensure content does not overlap with header */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px; /* Set max-width for readability */
+  padding: 16px; /* Consistent padding */
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Media Content */
+img,
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  /* height: 100%;  */
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 20px 0; /* Adds spacing around media content */
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Faded edge effect */
+}
+
+#footer address {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 16px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.subnav-content {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px); /* Blur effect for nested nav */
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2); /* Faded edge effect */
+  transition: 0.3s;
+}
+
+.subnav-content a {
+  color: #bdbdbd;
+  font-size: 20px;
+}
+
+.subnav-content a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a.process-support.active + .subnav-content {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+::selection {
+  background: #000000;
+  color: #fff;
+}
+
+/* Sidebar Menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 60px; /* Adjusted to create space between header and sidebar */
+  left: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slight white tint for the frosted effect */
+  backdrop-filter: blur(10px); /* Blur effect */
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar .sidebar-content {
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.menuBtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slight white tint for the frosted effect */
+  color: var(--headerTextColour);
+  padding: 10px 15px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.menuBtn:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slight white tint for the frosted effect on hover */
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.subnav-content {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px); /* Blur effect for nested nav */
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2); /* Faded edge effect */
+  transition: 0.3s;
+}
+
+.subnav-content a {
+  color: #bdbdbd;
+  font-size: 20px;
+}
+
+.subnav-content a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a.process-support.active + .subnav-content {
+  display: block;
+}
