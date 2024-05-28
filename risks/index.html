@@ -83,147 +83,104 @@
       <!-- Page Content -->
       <div id="content">
         <div class="content-container">
-          <h1>Risks</h1>
+          <h1>Risks of Advancements in AI Security of Open Source Software</h1>
+          <h2>Introduction</h2>
           <p>
-            Autonomous vehicles can vary in their ability to operate
-            autonomously. Most current vehicles, such as Teslas, are defined by
-            the Society of Automotive Engineers as level 2 autonomous vehicles,
-            meaning “partial driving automation”. Looking at data from Tesla,
-            their autopilot-based cars seem to have low rates of crashes, with
-            the rates of crashes per miles driven being 2-3x lower when
-            autopilot is engaged (Tesla Vehicle Safety…, n.d.). This sets a good
-            precedent for autonomous vehicles being safer than human-controlled
-            cars.
+            The advancements in artificial intelligence (AI) have brought significant improvements to open-source software (OSS). However, these advancements also introduce new security risks. In this page, we are going to examine the various risks associated with OSS in the context of AI security, providing a detailed analysis of each risk and potential mitigation strategies.
           </p>
-          <p style="text-align: center"><b>Figure 2</b></p>
-          <img src="fatal.jpeg" alt="figure 2" class="center" />
-          <p style="text-align: center">
-            <i>Note.</i> Fatal Accidents Damage Trust in Autonomous Driving in
-            2018. From
-            <i>Fatal Accidents Damage Trust in Autonomous Driving.</i>by
-            Statista, 2018.(
-            <a
-              href="https://www.statista.com/chart/13450/perceived-safety-of-self-driving-cars/"
-              >https://www.statista.com/chart/13450/perceived-safety-of-self-driving-cars/</a
-            >).
+
+          <h2>Privacy</h2>
+          <p>
+            Privacy concerns are paramount when it comes to open-source software, especially with AI integration. AI algorithms can analyze and process vast amounts of data, often leading to inadvertent privacy breaches. For instance, many AI-driven OSS applications collect user data even when not actively used, leading to significant privacy violations if not properly managed.
           </p>
           <p>
-            The most evident risk pertaining to autonomous vehicles is that in
-            the end, the software driving the cars was created by humans. This
-            could lead to any number of issues considering that humans naturally
-            make mistakes. For example, a poorly programmed or poorly trained AI
-            has the potential to make mistakes. Generally, due to regulations
-            and companies not wanting to be responsible for accidents, we could
-            expect that software errors would be minimal, however the human
-            aspect largely means that the chance of error will almost never be
-            zero. As mentioned, most bugs will be ironed out during testing and
-            development phases, but there is a chance that edge cases could
-            remain undetected for long periods of time, only being discovered
-            when they cause an accident. The argument as to whether this is
-            really an issue is still up for debate. Anyone thinking about this
-            topic could expect that people would argue both ways, some will
-            claim that the risk presented even by edge cases pales in comparison
-            to the risk presented by drivers. Others may be more sceptical of
-            the efficacy of autonomous vehicle programs, due to the sheer number
-            of edge cases presented to us on the road.
+            For example, in 2023, a vulnerability was found in Openfire, a widely used open-source chat server. This flaw (CVE-2023-32315) allowed hackers to create new administrative accounts, potentially accessing sensitive user data. This incident highlights the need for robust privacy measures and user consent mechanisms in AI-driven OSS.
+          </p>
+
+          <h2>Productivity Loss</h2>
+          <p>
+            While OSS offers many benefits, the integration of AI can also lead to productivity challenges. AI systems often require significant computational resources, which can strain organizational infrastructure and slow down operations. Moreover, managing and maintaining AI-integrated OSS can be time-consuming, diverting attention from core business activities.
           </p>
           <p>
-            (Shwartz, 2021) examines the evidence for self-driving cars being
-            safer than humans. He provides many arguments, however the main ones
-            are relating to the issues regarding testing and regulation of
-            autonomous vehicles. He argues that in many cases in the USA,
-            regulations are not strict enough, and give companies leeway to
-            provide poor quality autonomous vehicles which cause accidents. He
-            writes “Florida statute 316.85 specifically allows the operation of
-            autonomous vehicles and explicitly states that a driver does not
-            need to pay attention to the road in a self-driving vehicle (e.g.,
-            the driver can watch movies). It also explicitly permits autonomous
-            vehicle operation without a driver even present in the vehicle. And
-            there are no requirements for manufacturers to pass safety tests
-            beyond the requirements that were in place prior to self-driving
-            capabilities. Whenever a car, truck, bus, or taxi company decides
-            they are ready, they are free to test and sell driverless vehicles.”
-            Shwartz provides an example of this idea, where he argues that Tesla
-            had not adequately tested their vehicle, resulting in an accident.
-            The example is of a Tesla which’s software malfunctioned and caused
-            an accident while the vehicle was travelling 70mph (112km/h). The
-            front facing sensors on the car failed, meaning that the software
-            didn’t detect a tractor-trailer in front of the car, and thus the
-            automatic braking never applied, and the car crashed. Shwartz also
-            brings up the ‘edge cases’ argument, which is that humans have
-            common-sense reasoning, and AI software doesn’t. Due to the fact
-            that this ability can’t be programmed into something, it’s argued
-            that humans have the edge over cars because of our ability to react
-            and respond to novel occurrences. Cars, on the other hand, have to
-            have every possible situation programmed into them. Therefore, there
-            are two important tests which need to be carried out upon autonomous
-            vehicles to ensure they’re safe for real-world use. Firstly, that
-            they can respond adequately to situations they’ve already been
-            programmed for, but secondly, and more relevantly, that autonomous
-            vehicles can respond to new situations which they haven’t been
-            programmed for. Shwartz presents one such solution to this problem,
-            where level 4 (almost fully autonomous) vehicles are driven around
-            with a ‘safety driver’, whose role is to take over in the event of
-            an emergency. The fact that the driver had to take over is then
-            counted as an accident. This allows autonomous vehicle developers to
-            gather data on edge cases without actually having to have accidents
-            happen.
+            For instance, maintaining the security of AI-driven applications requires continuous monitoring and updates. The decentralized nature of OSS means that contributors may not consistently update the software, leading to outdated components that can compromise productivity and security. Regularly updated and well-maintained OSS is crucial to prevent these productivity losses.
+          </p>
+
+          <h2>Vigilantism</h2>
+          <p>
+            The transparency of OSS, while beneficial for collaborative development, can also lead to misuse and vigilantism. Publicly available source code can be exploited by malicious actors to identify and exploit vulnerabilities. This risk is exacerbated when AI algorithms are involved, as they can be manipulated to automate attacks.
           </p>
           <p>
-            The argument about edge cases extends to a common thought experiment
-            proposed by philosophers Philippa Foot and Judith Thomson, and known
-            to many as “The Trolley Problem”. The experiment depicts a situation
-            whereby a trolley is rolling down a track, and you are standing next
-            to a lever which can switch the trolley to a new set of tracks. If
-            you do nothing, multiple people will be hit by the trolley and die.
-            However, if you divert the trolley onto a new track, you can save
-            those people, at the cost of killing the one person who is on the
-            other track. This ethical dilemma is a common idea brought up when
-            discussing autonomous vehicles. To relate this idea to a car, a
-            situation can be imagined whereby the car is driving toward a crowd
-            of people, and it is at a point where the car must either run into
-            the people, or swerve into a wall and instead kill the driver.
-            (Bonnefon et al. 2016) studied people’s thoughts on situations such
-            as this. They found that in general, people prefer the idea that
-            self-driving cars should minimise the death toll: “participants
-            expressed a preference for autonomous vehicles programmed to kill
-            their passenger for the greater good. This preference was strong as
-            soon as 5 lives or more could be saved”. However, they found a
-            contradicting issue within that idea: that although people preferred
-            the option of killing the passenger, they wouldn’t want to be the
-            occupant of a car programmed that way themselves. Bonnefon writes:
-            “In all studies, participants expressed a moral preference for
-            autonomous vehicles sacrificing their passengers to save a greater
-            number of pedestrians. This moral preference was robust to
-            situations in which participants imagined themselves in the AV in
-            the company of a coworker, a family member, or their own child.
-            However, (a and b) participants did not express a comparable
-            preference for buying utilitarian autonomous vehicles, especially
-            when they thought of family members riding in the car, and (c and d)
-            they disapproved of regulations enforcing utilitarian algorithms for
-            autonomous vehicles, and indicated that they would be less likely to
-            purchase an AV under such a regulation.”
+            A case in point is the Ghostscript vulnerability, which exposed many Linux distributions to remote code execution attacks. This lack of oversight in the OSS community can lead to significant security breaches, emphasizing the need for stringent security reviews and responsible disclosure practices to prevent misuse.
+          </p>
+
+          <h2>Licensing and Intellectual Property Issues</h2>
+          <p>
+            Licensing issues are a common risk in OSS, particularly with the integration of AI technologies. Different licenses, such as copyleft, require modified versions of the software to be open-sourced, which can conflict with proprietary interests. Misunderstandings or violations of these licenses can lead to legal disputes.
           </p>
           <p>
-            One other issue pertaining to autonomous vehicles is the threat of
-            bad actors. There are numerous ways bad actors could potentially
-            mess with autonomous vehicles. Bad actors could range from
-            terrorists to people trying to assassinate someone. There are many
-            things bad actors could attempt to take control over or mess with,
-            as is the case with any software. In general, the more features a
-            software has, the more attack vectors exist for that software. A few
-            possibilities that could happen could be: If the autonomous vehicles
-            were in some way internet connected, they could potentially be
-            hacked and have their navigation systems taken over. Alternatively,
-            something that has already happened by researchers is attempting to
-            trick or break the automatic guidance system built into the car.
-            (Experimental Security…, 2019) (published by Keen Security Labs)
-            attempted to intentionally cause Tesla’s autopilot system to
-            malfunction by creating fake road markings on the ground. They found
-            that they could cause the car to change lanes by simply placing
-            specially-designed stickers on the ground. In the future, this could
-            potentially be a vector of which bad actors could take advantage of
-            to disrupt the operation of autonomous vehicles.
+            For example, Oracle's lawsuit against Google over Java API usage illustrates the potential legal ramifications of improper license management. Organizations must ensure thorough compliance with licensing terms to avoid such conflicts, using tools like FOSSology for license detection and management.
+          </p>
+
+          <h2>Unmaintained or Outdated Software</h2>
+          <p>
+            The risk of unmaintained or outdated software is significant in the OSS ecosystem. Many projects rely on voluntary contributions, which can wane over time, leaving software vulnerable to security threats. The AI components of OSS, in particular, require frequent updates to address new vulnerabilities and maintain performance.
+          </p>
+          <p>
+            The StackRot vulnerability in the Linux kernel's memory management subsystem exemplifies the dangers of unmaintained OSS. Continuous monitoring and regular updates are essential to mitigate the risks posed by outdated software components.
+          </p>
+
+          <h2>Publicly Available Source Code</h2>
+          <p>
+            The openness of OSS, while fostering innovation, also exposes it to potential attacks. Malicious actors can scrutinize the source code to identify and exploit vulnerabilities. This transparency is a double-edged sword, necessitating robust security practices to mitigate the associated risks.
+          </p>
+          <p>
+            For example, the vulnerability in WooCommerce allowed remote users to masquerade as administrators, highlighting the risks of publicly available source code. Regular security assessments and penetration testing are crucial to identify and address vulnerabilities in OSS.
+          </p>
+
+          <h2>Lack of Oversight of Source Code for Security</h2>
+          <p>
+            The decentralized development model of OSS often results in a lack of comprehensive security oversight. This can lead to significant vulnerabilities, as seen in the case of Ghostscript. Without proper oversight, OSS projects can become targets for cybercriminals, emphasizing the need for rigorous security reviews and best practices.
+          </p>
+
+          <h2>Uncertain Long-Term Sustainability</h2>
+          <p>
+            The long-term sustainability of OSS projects can be uncertain due to reliance on voluntary contributions and funding. Projects that lose support can become obsolete, leaving users without necessary updates and security patches. The end of support for Python 3.7 illustrates the challenges posed by abandoned OSS projects.
+          </p>
+          <p>
+            Organizations must assess the sustainability of OSS projects and plan for potential transitions to supported alternatives to ensure ongoing security and functionality.
+          </p>
+
+          <h2>Operational Issues with Open-Source Components</h2>
+          <p>
+            Operational challenges, such as incompatibility and poor documentation, can complicate the use of OSS. These issues can be exacerbated by AI integration, which may require specialized knowledge and resources to manage effectively.
+          </p>
+          <p>
+            The exploitation of the deprecated Boa web server in IoT devices highlights the operational risks associated with outdated OSS components. Comprehensive evaluation and testing are essential to ensure compatibility and security.
+          </p>
+
+          <h2>Bad Developer Practices</h2>
+          <p>
+            Poor coding practices within OSS projects can introduce significant security risks. The SQL injection vulnerability in MOVEit Transfer underscores the consequences of inadequate input validation and secure coding practices. Enforcing best practices and regular code reviews are critical to maintaining secure OSS.
+          </p>
+
+          <h2>Under and Oversized Dependencies</h2>
+          <p>
+            The use of inappropriate dependencies can inflate the attack surface of OSS. The GitHub social engineering campaign targeting NPM packages demonstrates how malicious dependencies can compromise security. Careful dependency management and regular audits are necessary to mitigate these risks.
+          </p>
+
+          <h2>Inconsistent Quality</h2>
+          <p>
+            The diverse nature of OSS contributors can lead to inconsistent code quality. The data breach at Nissan North America due to poor code quality highlights the risks of relying on OSS. Ensuring consistent quality requires stringent code reviews and adherence to development standards.
+          </p>
+
+          <h2>Conclusion</h2>
+          <p>
+            The integration of AI in open-source software offers substantial benefits but also introduces significant security risks. Privacy concerns, productivity losses, vigilantism, licensing issues, and the lack of oversight are some of the critical risks that must be addressed. By employing robust security measures, regular assessments, and best practices, organizations can mitigate these risks and harness the full potential of AI-driven OSS. Continuous vigilance and proactive management are essential to maintaining the security and integrity of open-source software environments (Helms, 2023).
+          </p>
+
+          <h2>Reference</h2>
+          <p>
+            Helms, J. (2023, September 27). 10 open-source software security risks. ConnectWise. https://www.connectwise.com/blog/cybersecurity/open-source-software-risks
           </p>
         </div>
       </div>
