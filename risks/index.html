@@ -83,111 +83,243 @@
       <!-- Page Content -->
       <div id="content">
         <div class="content-container">
-          <h1>Risks of Advancements in AI Security of Open Source Software</h1>
+          <h1>Cybersecurity and AI Security Risks in Open Source Software</h1>
+
           <h2>Introduction</h2>
           <p>
-            The advancements in artificial intelligence (AI) have brought significant improvements to open-source software (OSS). However, these advancements also introduce new security risks. In this page, we are going to examine the various risks associated with OSS in the context of AI security, providing a detailed analysis of each risk and potential mitigation strategies.
+            Cyberattack is an intentional action to steal and compromise
+            security and data, applications, or other assets through
+            unauthorized access to a network, computer system or digital
+            devices. Artificial intelligence (AI) has made open-source software
+            (OSS) much more powerful, but it also brings new security
+            challenges. In this page, we'll look at different types of
+            cyberattacks, their effects, and the risks of AI in OSS.
+            Understanding these threats and having strong security measures can
+            help protect valuable digital information.
           </p>
 
-          <h2>Privacy</h2>
+          <h2>Cyber Attacks and Risks</h2>
           <p>
-            Privacy concerns are paramount when it comes to open-source software, especially with AI integration. AI algorithms can analyze and process vast amounts of data, often leading to inadvertent privacy breaches. For instance, many AI-driven OSS applications collect user data even when not actively used, leading to significant privacy violations if not properly managed.
-          </p>
-          <p>
-            For example, in 2023, a vulnerability was found in Openfire, a widely used open-source chat server. This flaw (CVE-2023-32315) allowed hackers to create new administrative accounts, potentially accessing sensitive user data. This incident highlights the need for robust privacy measures and user consent mechanisms in AI-driven OSS.
-          </p>
-
-          <h2>Productivity Loss</h2>
-          <p>
-            While OSS offers many benefits, the integration of AI can also lead to productivity challenges. AI systems often require significant computational resources, which can strain organizational infrastructure and slow down operations. Moreover, managing and maintaining AI-integrated OSS can be time-consuming, diverting attention from core business activities.
-          </p>
-          <p>
-            For instance, maintaining the security of AI-driven applications requires continuous monitoring and updates. The decentralized nature of OSS means that contributors may not consistently update the software, leading to outdated components that can compromise productivity and security. Regularly updated and well-maintained OSS is crucial to prevent these productivity losses.
+            Cyberattacks are harmful actions that try to break into computer
+            systems, networks, and data. These attacks can cause serious
+            problems for both organizations and individuals.
           </p>
 
-          <h2>Vigilantism</h2>
+          <h3>Types of Cyberattacks</h3>
+          <ul>
+            <li>
+              <strong>Man-in-the-Middle (MitM):</strong> Attackers secretly
+              intercept communication between two parties to listen in, alter
+              data, or impersonate someone.
+            </li>
+            <li>
+              <strong>Phishing:</strong> Tricks people into giving away
+              sensitive information like login details or financial data through
+              emails, websites, or other channels.
+            </li>
+            <li>
+              <strong>Malware:</strong> Malicious software like viruses, worms,
+              Trojans, ransomware, spyware, and adware that infects systems,
+              steals data, or disrupts operations.
+            </li>
+            <li>
+              <strong>Distributed Denial of Service (DDoS):</strong> Attackers
+              overload a server or network with traffic, making it unavailable
+              to real users.
+            </li>
+          </ul>
+
+          <h3>Types of Web Attacks</h3>
           <p>
-            The transparency of OSS, while beneficial for collaborative development, can also lead to misuse and vigilantism. Publicly available source code can be exploited by malicious actors to identify and exploit vulnerabilities. This risk is exacerbated when AI algorithms are involved, as they can be manipulated to automate attacks.
+            Web attacks target web applications, websites, and services to
+            exploit vulnerabilities. Common web attacks include:
+          </p>
+          <ul>
+            <li>
+              <strong>SQL Injection (SQLi):</strong> Attackers inject harmful
+              SQL queries into input fields to steal or manipulate data in
+              poorly protected databases.
+            </li>
+            <li>
+              <strong>Cross-Site Request Forgery (CSRF):</strong> Attackers
+              trick users into performing unwanted actions on other websites
+              where they are logged in.
+            </li>
+            <li>
+              <strong>HTML Injection:</strong> Attackers insert harmful HTML
+              code into web pages, risking user sessions and sensitive
+              information.
+            </li>
+            <li>
+              <strong>Session Hijacking:</strong> Unauthorized individuals gain
+              access to a user’s active session, potentially taking control of
+              the account.
+            </li>
+          </ul>
+
+          <h3>Impacts</h3>
+          <ul>
+            <li>
+              <strong>Financial Loss:</strong> Theft of money, fraud, or
+              disruption of financial activities leading to financial losses,
+              fines, and legal problems.
+            </li>
+            <li>
+              <strong>Data Breaches:</strong> Unauthorized access to sensitive
+              data like personal information, financial records, and
+              intellectual property resulting in loss of privacy, legal issues,
+              damage to reputation, and financial losses.
+            </li>
+            <li>
+              <strong>Reputation Damage:</strong> Long-term harm to reputation,
+              loss of customers, and decreased market value due to bad
+              publicity, loss of customer trust, and damage to a company’s
+              image.
+            </li>
+            <li>
+              <strong>Societal and National Security Threats:</strong> Risk of
+              large-scale attacks on important infrastructure or election
+              systems causing national security risks, diplomatic issues, and
+              economic impacts.
+            </li>
+          </ul>
+
+          <h2>AI Security Risks in Open Source Software</h2>
+          <p>
+            AI has improved open-source software but also brings new security
+            risks. AI can analyze a lot of data, which can lead to privacy
+            breaches. For example, in 2023, a vulnerability in Openfire, an
+            open-source chat server, allowed hackers to create new admin
+            accounts and access sensitive user data. This shows the need for
+            strong privacy measures in AI-driven OSS.
           </p>
           <p>
-            A case in point is the Ghostscript vulnerability, which exposed many Linux distributions to remote code execution attacks. This lack of oversight in the OSS community can lead to significant security breaches, emphasizing the need for stringent security reviews and responsible disclosure practices to prevent misuse.
+            Using AI in OSS can slow down operations because AI systems need a
+            lot of computational resources. Keeping AI applications secure also
+            requires continuous monitoring and updates. Since OSS relies on
+            community contributions, it might not always be updated, leading to
+            outdated components that affect productivity and security.
+          </p>
+          <p>
+            The open nature of OSS can lead to misuse. Publicly available source
+            code can be exploited by attackers to find and use vulnerabilities.
+            This risk is higher with AI, which can be used to automate attacks.
+            The Ghostscript vulnerability, for example, exposed many Linux
+            systems to remote attacks, showing the need for strict security
+            checks and responsible practices.
           </p>
 
-          <h2>Licensing and Intellectual Property Issues</h2>
+          <h3>Licensing and Intellectual Property Issues</h3>
           <p>
-            Licensing issues are a common risk in OSS, particularly with the integration of AI technologies. Different licenses, such as copyleft, require modified versions of the software to be open-sourced, which can conflict with proprietary interests. Misunderstandings or violations of these licenses can lead to legal disputes.
-          </p>
-          <p>
-            For example, Oracle's lawsuit against Google over Java API usage illustrates the potential legal ramifications of improper license management. Organizations must ensure thorough compliance with licensing terms to avoid such conflicts, using tools like FOSSology for license detection and management.
-          </p>
-
-          <h2>Unmaintained or Outdated Software</h2>
-          <p>
-            The risk of unmaintained or outdated software is significant in the OSS ecosystem. Many projects rely on voluntary contributions, which can wane over time, leaving software vulnerable to security threats. The AI components of OSS, in particular, require frequent updates to address new vulnerabilities and maintain performance.
-          </p>
-          <p>
-            The StackRot vulnerability in the Linux kernel's memory management subsystem exemplifies the dangers of unmaintained OSS. Continuous monitoring and regular updates are essential to mitigate the risks posed by outdated software components.
+            OSS licensing can be tricky, especially with AI. Different licenses
+            might require modified versions of the software to be open-sourced,
+            which can conflict with proprietary interests. Violating these
+            licenses can lead to legal issues, like the lawsuit between Oracle
+            and Google over Java API usage.
           </p>
 
-          <h2>Publicly Available Source Code</h2>
+          <h3>Unmaintained or Outdated Software</h3>
           <p>
-            The openness of OSS, while fostering innovation, also exposes it to potential attacks. Malicious actors can scrutinize the source code to identify and exploit vulnerabilities. This transparency is a double-edged sword, necessitating robust security practices to mitigate the associated risks.
-          </p>
-          <p>
-            For example, the vulnerability in WooCommerce allowed remote users to masquerade as administrators, highlighting the risks of publicly available source code. Regular security assessments and penetration testing are crucial to identify and address vulnerabilities in OSS.
-          </p>
-
-          <h2>Lack of Oversight of Source Code for Security</h2>
-          <p>
-            The decentralized development model of OSS often results in a lack of comprehensive security oversight. This can lead to significant vulnerabilities, as seen in the case of Ghostscript. Without proper oversight, OSS projects can become targets for cybercriminals, emphasizing the need for rigorous security reviews and best practices.
+            OSS projects often rely on volunteers, which can lead to outdated
+            software. AI components need regular updates to fix new
+            vulnerabilities. The StackRot vulnerability in the Linux kernel’s
+            memory management shows the dangers of unmaintained OSS. Regular
+            updates and monitoring are crucial.
           </p>
 
-          <h2>Uncertain Long-Term Sustainability</h2>
+          <h3>Publicly Available Source Code</h3>
           <p>
-            The long-term sustainability of OSS projects can be uncertain due to reliance on voluntary contributions and funding. Projects that lose support can become obsolete, leaving users without necessary updates and security patches. The end of support for Python 3.7 illustrates the challenges posed by abandoned OSS projects.
-          </p>
-          <p>
-            Organizations must assess the sustainability of OSS projects and plan for potential transitions to supported alternatives to ensure ongoing security and functionality.
-          </p>
-
-          <h2>Operational Issues with Open-Source Components</h2>
-          <p>
-            Operational challenges, such as incompatibility and poor documentation, can complicate the use of OSS. These issues can be exacerbated by AI integration, which may require specialized knowledge and resources to manage effectively.
-          </p>
-          <p>
-            The exploitation of the deprecated Boa web server in IoT devices highlights the operational risks associated with outdated OSS components. Comprehensive evaluation and testing are essential to ensure compatibility and security.
+            The open nature of OSS makes it easy for attackers to find and
+            exploit vulnerabilities. For example, a flaw in WooCommerce allowed
+            remote users to act as administrators. Regular security assessments
+            and penetration testing are essential to find and fix
+            vulnerabilities.
           </p>
 
-          <h2>Bad Developer Practices</h2>
+          <h3>Lack of Oversight of Source Code for Security</h3>
           <p>
-            Poor coding practices within OSS projects can introduce significant security risks. The SQL injection vulnerability in MOVEit Transfer underscores the consequences of inadequate input validation and secure coding practices. Enforcing best practices and regular code reviews are critical to maintaining secure OSS.
+            OSS development often lacks comprehensive security oversight,
+            leading to vulnerabilities. The Ghostscript vulnerability is a good
+            example. Rigorous security reviews and best practices are necessary
+            to keep OSS secure.
           </p>
 
-          <h2>Under and Oversized Dependencies</h2>
+          <h3>Uncertain Long-Term Sustainability</h3>
           <p>
-            The use of inappropriate dependencies can inflate the attack surface of OSS. The GitHub social engineering campaign targeting NPM packages demonstrates how malicious dependencies can compromise security. Careful dependency management and regular audits are necessary to mitigate these risks.
+            The long-term sustainability of OSS can be uncertain due to its
+            reliance on volunteers and funding. Projects that lose support
+            become obsolete, leaving users without updates and security patches.
+            Organizations must plan for transitions to supported alternatives to
+            ensure security.
           </p>
 
-          <h2>Inconsistent Quality</h2>
+          <h3>Operational Issues with Open-Source Components</h3>
           <p>
-            The diverse nature of OSS contributors can lead to inconsistent code quality. The data breach at Nissan North America due to poor code quality highlights the risks of relying on OSS. Ensuring consistent quality requires stringent code reviews and adherence to development standards.
+            OSS can have operational issues like incompatibility and poor
+            documentation. AI integration can make these problems worse. The
+            deprecated Boa web server used in IoT devices shows the risks of
+            outdated OSS components. Thorough evaluation and testing are
+            necessary for compatibility and security.
+          </p>
+
+          <h3>Bad Developer Practices</h3>
+          <p>
+            Poor coding practices can introduce significant security risks in
+            OSS. For example, the SQL injection vulnerability in MOVEit Transfer
+            shows the importance of secure coding practices. Enforcing best
+            practices and regular code reviews are critical.
+          </p>
+
+          <h3>Under and Oversized Dependencies</h3>
+          <p>
+            Inappropriate dependencies can increase the attack surface of OSS.
+            The GitHub social engineering campaign targeting NPM packages shows
+            how malicious dependencies can compromise security. Careful
+            dependency management and regular audits are necessary.
+          </p>
+
+          <h3>Inconsistent Quality</h3>
+          <p>
+            The diverse nature of OSS contributors can lead to inconsistent code
+            quality. The data breach at Nissan North America due to poor code
+            quality highlights the risks. Consistent quality requires stringent
+            code reviews and development standards.
           </p>
 
           <h2>Conclusion</h2>
           <p>
-            The integration of AI in open-source software offers substantial benefits but also introduces significant security risks. Privacy concerns, productivity losses, vigilantism, licensing issues, and the lack of oversight are some of the critical risks that must be addressed. By employing robust security measures, regular assessments, and best practices, organizations can mitigate these risks and harness the full potential of AI-driven OSS. Continuous vigilance and proactive management are essential to maintaining the security and integrity of open-source software environments (Helms, 2023).
+            AI in open-source software brings many benefits but also significant
+            security risks. Privacy concerns, productivity losses, misuse,
+            licensing issues, and lack of oversight are major risks that need to
+            be addressed. By using strong security measures, regular
+            assessments, and best practices, organizations can mitigate these
+            risks and maximize the benefits of AI-driven OSS. Continuous
+            vigilance and proactive management are essential to maintaining
+            security and integrity.
           </p>
 
           <h2>Reference</h2>
           <p>
-            Helms, J. (2023, September 27). 10 open-source software security risks. ConnectWise. https://www.connectwise.com/blog/cybersecurity/open-source-software-risks
+            OWASP Foundation. (n.d.). OWASP Top Ten Web Application Security
+            Risks. Retrieved May 31, 2024, from
+            <a href="https://owasp.org/www-project-top-ten/"
+              >https://owasp.org/www-project-top-ten/</a
+            >
+          </p>
+          <p>
+            Helms, J. (2023, September 27). 10 open-source software security
+            risks. ConnectWise. Retrieved May 31, 2024, from
+            <a
+              href="https://www.connectwise.com/blog/cybersecurity/open-source-software-risks"
+              >https://www.connectwise.com/blog/cybersecurity/open-source-software-risks</a
+            >
           </p>
         </div>
       </div>
 
       <div id="footer">
         <div class="nav-container">
-          <a href="/opportunities/" class="nav-link">
+          <a href="../opportunities/" class="nav-link">
             <span class="arrow-left"></span>Previous: Opportunities
           </a>
           <a href="../choices/" class="nav-link">
@@ -195,9 +327,10 @@
           </a>
         </div>
         <address>
-          Made May 2024<br>
+          Made May 2024<br />
           by Hansith Perera, Soyeaon Im, Johny Son, Maxwell Young
         </address>
       </div>
+    </div>
   </body>
 </html>
