@@ -20,7 +20,6 @@ body {
   z-index: 1;
   top: 60px; /* Adjusted to create space between header and sidebar */
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   overflow-x: hidden;
   transition: 0.5s;
   backdrop-filter: blur(10px);
@@ -267,12 +266,6 @@ th {
   z-index: 1;
   top: 60px; /* Adjusted to create space between header and sidebar */
   left: 0;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Slight white tint for the frosted effect */
   backdrop-filter: blur(10px); /* Blur effect */
   overflow-x: hidden;
   transition: 0.5s;
@@ -400,4 +393,36 @@ th {
 .arrow-right::after {
   content: "→";
   margin-left: 8px;
+}
+
+.references {
+  margin: 1rem 10rem;
+  font-family: "Inter", sans-serif;
+}
+
+.references h1,
+.references h2 {
+  text-align: center;
+}
+
+.references ul {
+  list-style-type: none; /* Remove list-style */
+  padding: 0;
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-indent: -0.5in; /* Create hanging indent */
+  padding-left: 0.5in; /* Align text properly */
+}
+
+.references li a {
+  color: #0000ee;
+  text-decoration: none;
+}
+
+.references li a:hover {
+  text-decoration: underline;
 }
